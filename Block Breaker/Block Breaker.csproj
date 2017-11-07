@@ -94,7 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\LoseBorderScript.cs" />
     <Compile Include="Assets\Scripts\MusicPlayerScript.cs" />
+    <Compile Include="Assets\Scripts\PaddleScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Fonts\bm_block\read me.txt" />
