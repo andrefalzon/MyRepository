@@ -15,8 +15,9 @@ public class BallScript : MonoBehaviour {
 
         paddleBallPosDiff = this.transform.position - paddle.transform.position;
 
-		
-	}
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -29,15 +30,21 @@ public class BallScript : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && !gameStart)
         {
             gameStart = true;
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(2f, 12f);
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(1f, 10f);
         }
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (gameStart)
+        string colName = collision.collider.name;
+
+
+        //if (gameStart && (colName == "Paddle" || colName == "LeftBorder" || colName == "RightBorder")) ;
+        if (gameStart && collision.collider.tag !="Breakable")
         {
             gameObject.GetComponent<AudioSource>().Play();
+            Vector2 tweak = new Vector2(Random.Range(0f, 0.2f), (Random.Range(0f, 0.2f)));
+            this.GetComponent<Rigidbody2D>().velocity += tweak;
         }
 
         
