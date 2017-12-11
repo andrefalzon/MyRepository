@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bd1ee6be15fdf9840b2bde618374c3ba
+timeCreated: 1512829473
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Richardson Brand Accelerator
+  fontNames:
+  - Richardson Brand Accelerator
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

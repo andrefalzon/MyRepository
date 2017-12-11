@@ -16,7 +16,7 @@ public class PaddleScript : MonoBehaviour {
 
         //print(Input.mousePosition.x);
 
-        //float mousePosInUnits = (Input.mousePosition.x / Screen.width * 16)-8;
+        float mousePosInUnits = (Input.mousePosition.x / Screen.width * 16)-8;
 
         
         Vector3 newPaddlePos = new Vector3(mousePosInUnits, gameObject.transform.position.y, gameObject.transform.position.z);
